@@ -42,6 +42,13 @@ class Calculadora extends Component {
               statement: 'ERROR',
             });
           } else {
+            if (result.toString().length > 9) {
+              this.setState({
+                statement: result.toString().substring(0, 9),
+              });
+              return;
+            }
+
             this.setState({
               statement: result.toString(),
             });
