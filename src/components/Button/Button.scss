@@ -1,11 +1,16 @@
 .button {
-  // height: calc(100% * 0.3);
-  // width: calc(100% * 0.02);
   padding: 10px;
   font-size: 1.3rem;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   color: #f4f5f9;
+  border-radius: 15px;
+  background-color: #202125;
+
+  &:hover {
+    background-color: #43444A;
+  }
 }
 
 .button-operation {

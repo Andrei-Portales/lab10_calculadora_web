@@ -8,21 +8,21 @@ const OperationKeyboard = (props) => {
 
   return (
     <div className="buttons-operations">
-      <Button text="^" setValue={setValue} color="#202125" isOperation />
-      <Button text="Del" setValue={setValue} color="#202125" isOperation />
-      <Button text="Ac" setValue={setValue} color="#202125" isOperation />
+      <Button text="^" setValue={setValue} isOperation />
+      <Button text="Del" setValue={setValue} isOperation />
+      <Button text="Ac" setValue={setValue} isOperation />
 
-      <Button text="(" setValue={setValue} color="#202125" isOperation />
-      <Button text=")" setValue={setValue} color="#202125" isOperation />
-      <Button text="%" setValue={setValue} color="#202125" isOperation />
+      <Button text="(" setValue={setValue} isOperation />
+      <Button text=")" setValue={setValue} isOperation />
+      <Button text="%" setValue={setValue} isOperation />
 
-      <Button text="/" setValue={setValue} color="#202125" isOperation />
-      <Button text="*" setValue={setValue} color="#202125" isOperation />
-      <Button text="-" setValue={setValue} color="#202125" isOperation />
+      <Button text="/" setValue={setValue} isOperation />
+      <Button text="*" setValue={setValue} isOperation />
+      <Button text="-" setValue={setValue} isOperation />
 
-      <Button text="+" setValue={setValue} color="#202125" isOperation />
-      <Button text="pi" setValue={setValue} color="#202125" isOperation />
-      <Button text="=" setValue={setValue} color="#202125" isOperation />
+      <Button text="+" setValue={setValue} isOperation />
+      <Button text="pi" setValue={setValue} isOperation />
+      <Button text="=" setValue={setValue} isOperation />
     </div>
   );
 };

@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import './Button.scss';
 
 const Button = (props) => {
-  const { text, setValue, color, isOperation } = props;
+  const { text, setValue, isOperation } = props;
 
   return (
     <div
       className={!isOperation ? 'button' : 'button-operation'}
-      style={{ backgroundColor: color }}
       onClick={() => setValue(text)}
     >
       <div>{text}</div>
@@ -21,6 +20,5 @@ export default Button;
 Button.propTypes = {
   text: PropTypes.string.isRequired,
   setValue: PropTypes.func.isRequired,
-  color: PropTypes.string.isRequired,
   isOperation: PropTypes.bool.isRequired,
 };

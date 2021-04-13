@@ -8,10 +8,12 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: '[name]_[hash].js',
   },
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name]_[hash].css',
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
@@ -20,6 +22,14 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name]_[hash].[ext]',
+          outputPath: 'assets',
+        },
+      },
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
