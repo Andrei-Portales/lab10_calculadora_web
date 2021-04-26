@@ -76,7 +76,7 @@ class Calculadora extends Component {
     const { statement } = this.state;
     return (
       <div className="all-content">
-        <div className="calculadora">
+        <div className="calculadora" data-testid="calculadora-test">
           <div className="input-area">
             <Input text={statement} />
           </div>

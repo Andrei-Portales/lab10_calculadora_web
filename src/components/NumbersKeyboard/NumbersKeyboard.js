@@ -7,8 +7,8 @@ const NumbersKeyboard = (props) => {
   const { setValue } = props;
 
   return (
-    <div className="buttons-numbers">
-      <Button text="7" setValue={setValue} isOperation={false} />
+    <div className="buttons-numbers" data-testid="numbers-test">
+      <Button text="7" setValue={setValue} isOperation={false} data-testid="boton-presion-test"/>
       <Button text="8" setValue={setValue} isOperation={false} />
       <Button text="9" setValue={setValue} isOperation={false} />
       <Button text="4" setValue={setValue} isOperation={false} />

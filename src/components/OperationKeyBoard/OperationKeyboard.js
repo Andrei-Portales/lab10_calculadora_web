@@ -7,7 +7,7 @@ const OperationKeyboard = (props) => {
   const { setValue } = props;
 
   return (
-    <div className="buttons-operations">
+    <div className="buttons-operations" data-testid="oprational-test">
       <Button text="^" setValue={setValue} isOperation />
       <Button text="Del" setValue={setValue} isOperation />
       <Button text="Ac" setValue={setValue} isOperation />

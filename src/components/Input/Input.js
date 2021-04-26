@@ -5,8 +5,8 @@ import './Input.scss';
 const Input = (props) => {
   const { text } = props;
   return (
-    <div className="input-container">
-      <input value={text} />
+    <div className="input-container" data-testid="div-test">
+      <input value={text} onChange={()=>{}} data-testid="input-test"/>
     </div>
   );
 };

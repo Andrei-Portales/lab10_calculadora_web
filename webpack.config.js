@@ -22,6 +22,7 @@ module.exports = {
   ],
   module: {
     rules: [
+      {exclude: ['node_modules'], loader: 'babel', test: /\.jsx?$/},
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         loader: 'file-loader',
@@ -45,4 +46,7 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    
+  }
 };

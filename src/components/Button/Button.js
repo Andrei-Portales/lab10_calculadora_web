@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.scss';
 
-const Button = (props) => {
-  const { text, setValue, isOperation } = props;
-
+const Button = ({ text, setValue, isOperation }) => {
   return (
     <div
+      data-testid="button-test"
       className={!isOperation ? 'button' : 'button-operation'}
       onClick={() => setValue(text)}
     >
